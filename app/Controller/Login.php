@@ -1,8 +1,8 @@
 <?php
 
-namespace CoteInfo\Controller;
+namespace HardwareBorrow\Controller;
 
-use CoteInfo\Model\UserModel;
+use HardwareBorrow\Model\UserModel;
 /*
  * Contrôle de qualité du formulaire de connexion
  * Filtre les champs avant de refuser ou valider une connexion utilisateur
@@ -20,11 +20,8 @@ class Login extends LoginForm
         }
         // Sinon $_POST est rempli sans erreurs, affiche la page succès et connecte l'utilisateur
         else {
-            if (!isset($user)) {
-                $user = new UserModel;
-            }
-            $_SESSION['user_id'] = $user->getIdByEmail($this->email);
-            $_SESSION['is_admin'] = $user->isAdmin($_SESSION['user_id']);
+            $_SESSION['user_id'] = $this->user->getIdByEmail($this->email);
+            $_SESSION['is_admin'] = $this->user->isAdmin($_SESSION['user_id']);
             session_regenerate_id(true);
             require ROOT . '/app/View/connexion-success_view.php'; // Affiche page succès
         }

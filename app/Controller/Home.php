@@ -1,6 +1,6 @@
 <?php
 
-namespace CoteInfo\Controller;
+namespace HardwareBorrow\Controller;
 /*
  * Classe Home
  * Gère la page d'accueil

@@ -1,6 +1,6 @@
 <?php
 
-namespace CoteInfo\Controller;
+namespace HardwareBorrow\Controller;
 /*
  * Classe PageNotFound
  * Gère la page 404
