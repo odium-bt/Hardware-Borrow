@@ -1,8 +1,6 @@
 <?php
 
 namespace HardwareBorrow\Controller;
-
-use HardwareBorrow\Model\UserModel;
 /*
  * Contrôle de qualité du formulaire de connexion
  * Filtre les champs avant de refuser ou valider une connexion utilisateur
