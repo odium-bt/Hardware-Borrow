@@ -1,0 +1,13 @@
+{
+    "name": "zadig-mouquet/hardware-borrow",
+    "description": "A web application to borrow hardware",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "HardwareBorrow\\": "app/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
